@@ -23,5 +23,12 @@ namespace frm_search
             ln.MdiParent = this;
             ln.Show();
         }
+
+        private void binnarySearchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            binnsrc bn = new binnsrc();
+            bn.MdiParent = this;
+            bn.Show();
+        }
     }
 }
