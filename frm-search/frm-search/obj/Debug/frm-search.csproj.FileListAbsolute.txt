@@ -20,3 +20,4 @@ C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\frm-searc
 C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\frm-search\frm-search\obj\Debug\frm_search.Properties.Resources.resources
 C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\frm-search\frm-search\obj\Debug\frm-search.csproj.GenerateResource.Cache
 C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\frm-search\frm-search\obj\Debug\frm_search.binnsrc.resources
+C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\frm-search\frm-search\obj\Debug\frm_search.jumpsrc.resources

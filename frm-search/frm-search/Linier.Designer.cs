@@ -65,6 +65,7 @@
             // 
             // btn_add
             // 
+            this.btn_add.ForeColor = System.Drawing.Color.Black;
             this.btn_add.Location = new System.Drawing.Point(197, 47);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(75, 23);
@@ -75,11 +76,11 @@
             // 
             // btn_cari
             // 
-            this.btn_cari.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_cari.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_cari.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cari.BackgroundImage")));
             this.btn_cari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_cari.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cari.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btn_cari.ForeColor = System.Drawing.Color.SteelBlue;
             this.btn_cari.Location = new System.Drawing.Point(221, 186);
             this.btn_cari.Name = "btn_cari";
             this.btn_cari.Size = new System.Drawing.Size(47, 41);
@@ -90,7 +91,7 @@
             // lbl_tampil
             // 
             this.lbl_tampil.AutoSize = true;
-            this.lbl_tampil.Location = new System.Drawing.Point(12, 237);
+            this.lbl_tampil.Location = new System.Drawing.Point(12, 228);
             this.lbl_tampil.Name = "lbl_tampil";
             this.lbl_tampil.Size = new System.Drawing.Size(0, 13);
             this.lbl_tampil.TabIndex = 5;
@@ -99,6 +100,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(68, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 24);
@@ -108,23 +110,24 @@
             // btn_clear
             // 
             this.btn_clear.AutoSize = true;
+            this.btn_clear.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btn_clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_clear.BackgroundImage")));
             this.btn_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_clear.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_clear.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btn_clear.Location = new System.Drawing.Point(0, 264);
+            this.btn_clear.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btn_clear.Location = new System.Drawing.Point(0, 253);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(280, 57);
+            this.btn_clear.Size = new System.Drawing.Size(280, 68);
             this.btn_clear.TabIndex = 7;
-            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // Linier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(280, 321);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.label1);
@@ -134,6 +137,7 @@
             this.Controls.Add(this.lst_arr);
             this.Controls.Add(this.txt_search);
             this.Controls.Add(this.txt_input);
+            this.ForeColor = System.Drawing.Color.White;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Linier";

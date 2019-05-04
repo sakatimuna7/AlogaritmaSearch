@@ -41,6 +41,7 @@ namespace frm_search
         }
         private void btn_add_Click(object sender, EventArgs e)
         {
+            if (txt_input.Text == "") return;
             lst_arr.Items.Add(txt_input.Text);
             txt_input.Clear();
             txt_input.Focus();

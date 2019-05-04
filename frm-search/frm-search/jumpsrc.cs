@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace frm_search
 {
-    public partial class binnsrc : Form
+    public partial class jumpsrc : Form
     {
         int[] data;
         int leng;
         int cari;
 
-        public binnsrc()
+        public jumpsrc()
         {
             InitializeComponent();
         }
-
         private void txt_input_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar) == false          // -- jika bukan digit
@@ -56,17 +55,17 @@ namespace frm_search
         }
         private void btn_cari_Click(object sender, EventArgs e)
         {
-            arr();
-            if (txt_search.Text == "")return ;
+            if (lst_sort.Text == "") arr();
+            if (txt_search.Text == "") return;
             cari = int.Parse(txt_search.Text);
-            int hasil = binarySearch(data, 0, leng - 1, cari);
+            int hasil = jumpSearch(data, cari);
             if (hasil == -1)
             {
                 lbl_tampil.Text = "Nilai Yang Anda Cari Tidak Ada Error Code ";
             }
             else
             {
-                lbl_tampil.Text = "Nilai Yang Anda Cari Ada Di Index " + hasil;
+                lbl_tampil.Text = "Nilai Yang Anda Cari Ada Di Index " + hasil + ", " + (hasil+1);
             }
             txt_search.Clear();
             txt_search.Focus();
@@ -77,34 +76,7 @@ namespace frm_search
             lst_sort.Items.Clear();
             txt_input.Focus();
         }
-                            //fungction 
-    // Returns index of x if it is present in 
-    // arr[l..r], else return -1 
-        static int binarySearch(int[] arr, int l,int r, int x)
-        {
-            if (r >= l)
-            {
-                int mid = l + (r - l) / 2;
-
-                // If the element is present at the 
-                // middle itself 
-                if (arr[mid] == x)
-                    return mid;
-
-                // If element is smaller than mid, then 
-                // it can only be present in left subarray 
-                if (arr[mid] > x)
-                    return binarySearch(arr, l, mid - 1, x);
-
-                // Else the element can only be present 
-                // in right subarray 
-                return binarySearch(arr, mid + 1, r, x);
-            }
-
-            // We reach here when element is not present 
-            // in array 
-            return -1;
-        }
+        //Fungctin
         void arr()
         {
             leng = lst_arr.Items.Count;
@@ -119,6 +91,42 @@ namespace frm_search
             {
                 lst_sort.Items.Add(i);
             }
+        }
+        public static int jumpSearch(int[] arr, int x)
+        {
+            int n = arr.Length;
+
+            // Finding block size to be jumped 
+            int step = (int)Math.Floor(Math.Sqrt(n));
+
+            // Finding the block where element is 
+            // present (if it is present) 
+            int prev = 0;
+            while (arr[Math.Min(step, n) - 1] < x)
+            {
+                prev = step;
+                step += (int)Math.Floor(Math.Sqrt(n));
+                if (prev >= n)
+                    return -1;
+            }
+
+            // Doing a linear search for x in block 
+            // beginning with prev. 
+            while (arr[prev] < x)
+            {
+                prev++;
+
+                // If we reached next block or end of 
+                // array, element is not present. 
+                if (prev == Math.Min(step, n))
+                    return -1;
+            }
+
+            // If element is found 
+            if (arr[prev] == x)
+                return prev;
+
+            return -1;
         }
     }
 }
