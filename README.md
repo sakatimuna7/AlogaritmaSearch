@@ -4,7 +4,7 @@ Alogaritma Search
 baru :
 - menyempurnakan binnary search
 - menyempurnakan linier search
-- menambahkan jump search
-- fix bug isue
+- menyempurnakan jump search
+- fix bug issue
 
 <img src="pref1.PNG">
