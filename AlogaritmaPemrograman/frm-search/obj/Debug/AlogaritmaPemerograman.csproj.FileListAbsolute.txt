@@ -22,3 +22,7 @@ C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\Alogaritm
 C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\AlogaritmaPemrograman\frm-search\obj\Debug\frm_search.Linier.resources
 C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\AlogaritmaPemrograman\frm-search\obj\Debug\frm_search.Properties.Resources.resources
 C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\AlogaritmaPemrograman\frm-search\obj\Debug\AlogaritmaPemerograman.csproj.GenerateResource.Cache
+C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\AlogaritmaPemrograman\frm-search\obj\Debug\frm_search.SelectionSort.resources
+C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\AlogaritmaPemrograman\frm-search\obj\Debug\frm_search.BubleSort.resources
+C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\AlogaritmaPemrograman\frm-search\obj\Debug\frm_search.MargeSort.resources
+C:\Users\handan\Documents\Visual Studio 2012\Projects\AlogaritmaSearch\AlogaritmaPemrograman\frm-search\obj\Debug\frm_search.QuickSort.resources

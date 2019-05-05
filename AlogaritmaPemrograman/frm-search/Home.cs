@@ -48,11 +48,39 @@ namespace frm_search
             jm.Show();
         }
 
+        private void linierSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelectionSort ss = new SelectionSort();
+            ss.MdiParent = this;
+            ss.Show();
+        }
+
+        private void bubleSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BubleSort bs = new BubleSort();
+            bs.MdiParent = this;
+            bs.Show();
+        }
+
+        private void margeSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MargeSort ms = new MargeSort();
+            ms.MdiParent = this;
+            ms.Show();
+        }
+
+        private void quickSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuickSort qs = new QuickSort();
+            qs.MdiParent = this;
+            qs.Show();
+        }
+
         /*
          jika aplikasi ini di unggah mahasiswa untuk pengumpulan tugas terkecuali saya secara full tanpa =>
          * mengambil Code tertentu saja, saya harap bapak dosen dapat memberi sangsi terhadap =>
-         * Mahasiswa Tersebut. Tujuan saya mengupload ini untuk membantu teman-teman saya yang sedikit =>
-         * kesulitan dalam pembuatan program.
+         * Mahasiswa Tersebut. Tujuan saya mengupload ini untuk memberikan contoh ke teman-teman saya yang sedikit =>
+         * kesulitan dalam pembuatan program berbasis from.
          * Saya merasa program ini tidak sepenuhnya sempurna, jadi karna itu saya mohon maaf atas kekurangan =>
          * atas program yang saya buat
          */

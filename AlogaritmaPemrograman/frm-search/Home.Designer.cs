@@ -29,25 +29,58 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.sortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linierSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bubleSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.margeSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.linierSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.binnarySearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jumpSeacrhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // sortToolStripMenuItem
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchToolStripMenuItem,
-            this.aboutmeToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(559, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.sortToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.linierSortToolStripMenuItem,
+            this.bubleSortToolStripMenuItem,
+            this.margeSortToolStripMenuItem,
+            this.quickSortToolStripMenuItem});
+            this.sortToolStripMenuItem.Name = "sortToolStripMenuItem";
+            this.sortToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.sortToolStripMenuItem.Text = "Sort";
+            // 
+            // linierSortToolStripMenuItem
+            // 
+            this.linierSortToolStripMenuItem.Name = "linierSortToolStripMenuItem";
+            this.linierSortToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.linierSortToolStripMenuItem.Text = "Selection Sort";
+            this.linierSortToolStripMenuItem.Click += new System.EventHandler(this.linierSortToolStripMenuItem_Click);
+            // 
+            // bubleSortToolStripMenuItem
+            // 
+            this.bubleSortToolStripMenuItem.Name = "bubleSortToolStripMenuItem";
+            this.bubleSortToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bubleSortToolStripMenuItem.Text = "Buble Sort";
+            this.bubleSortToolStripMenuItem.Click += new System.EventHandler(this.bubleSortToolStripMenuItem_Click);
+            // 
+            // margeSortToolStripMenuItem
+            // 
+            this.margeSortToolStripMenuItem.Name = "margeSortToolStripMenuItem";
+            this.margeSortToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.margeSortToolStripMenuItem.Text = "Marge Sort";
+            this.margeSortToolStripMenuItem.Click += new System.EventHandler(this.margeSortToolStripMenuItem_Click);
+            // 
+            // quickSortToolStripMenuItem
+            // 
+            this.quickSortToolStripMenuItem.Name = "quickSortToolStripMenuItem";
+            this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quickSortToolStripMenuItem.Text = "Quick Sort";
+            this.quickSortToolStripMenuItem.Click += new System.EventHandler(this.quickSortToolStripMenuItem_Click);
             // 
             // searchToolStripMenuItem
             // 
@@ -73,6 +106,13 @@
             this.binnarySearchToolStripMenuItem.Text = "Binnary Search";
             this.binnarySearchToolStripMenuItem.Click += new System.EventHandler(this.binnarySearchToolStripMenuItem_Click);
             // 
+            // jumpSeacrhToolStripMenuItem
+            // 
+            this.jumpSeacrhToolStripMenuItem.Name = "jumpSeacrhToolStripMenuItem";
+            this.jumpSeacrhToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.jumpSeacrhToolStripMenuItem.Text = "Jump Seacrh";
+            this.jumpSeacrhToolStripMenuItem.Click += new System.EventHandler(this.jumpSeacrhToolStripMenuItem_Click);
+            // 
             // aboutmeToolStripMenuItem
             // 
             this.aboutmeToolStripMenuItem.Name = "aboutmeToolStripMenuItem";
@@ -80,12 +120,17 @@
             this.aboutmeToolStripMenuItem.Text = "About Me";
             this.aboutmeToolStripMenuItem.Click += new System.EventHandler(this.aboutmeToolStripMenuItem_Click);
             // 
-            // jumpSeacrhToolStripMenuItem
+            // menuStrip1
             // 
-            this.jumpSeacrhToolStripMenuItem.Name = "jumpSeacrhToolStripMenuItem";
-            this.jumpSeacrhToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.jumpSeacrhToolStripMenuItem.Text = "Jump Seacrh";
-            this.jumpSeacrhToolStripMenuItem.Click += new System.EventHandler(this.jumpSeacrhToolStripMenuItem_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sortToolStripMenuItem,
+            this.searchToolStripMenuItem,
+            this.aboutmeToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(559, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // Home
             // 
@@ -113,12 +158,18 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem sortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linierSortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bubleSortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem margeSortToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quickSortToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem linierSearchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem binnarySearchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutmeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jumpSeacrhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutmeToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+
     }
 }
 

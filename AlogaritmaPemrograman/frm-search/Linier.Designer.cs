@@ -40,12 +40,15 @@
             this.lbl_count = new System.Windows.Forms.Label();
             this.lbl_index = new System.Windows.Forms.Label();
             this.lbl_tampil = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txt_input
             // 
-            this.txt_input.Location = new System.Drawing.Point(12, 47);
+            this.txt_input.Location = new System.Drawing.Point(93, 47);
             this.txt_input.Name = "txt_input";
             this.txt_input.Size = new System.Drawing.Size(179, 20);
             this.txt_input.TabIndex = 0;
@@ -53,7 +56,7 @@
             // 
             // txt_search
             // 
-            this.txt_search.Location = new System.Drawing.Point(12, 196);
+            this.txt_search.Location = new System.Drawing.Point(96, 199);
             this.txt_search.Name = "txt_search";
             this.txt_search.Size = new System.Drawing.Size(197, 20);
             this.txt_search.TabIndex = 1;
@@ -62,17 +65,17 @@
             // lst_arr
             // 
             this.lst_arr.FormattingEnabled = true;
-            this.lst_arr.Location = new System.Drawing.Point(12, 85);
+            this.lst_arr.Location = new System.Drawing.Point(19, 89);
             this.lst_arr.Name = "lst_arr";
-            this.lst_arr.Size = new System.Drawing.Size(260, 95);
+            this.lst_arr.Size = new System.Drawing.Size(322, 95);
             this.lst_arr.TabIndex = 2;
             // 
             // btn_add
             // 
             this.btn_add.ForeColor = System.Drawing.Color.Black;
-            this.btn_add.Location = new System.Drawing.Point(197, 47);
+            this.btn_add.Location = new System.Drawing.Point(278, 45);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 23);
+            this.btn_add.Size = new System.Drawing.Size(68, 23);
             this.btn_add.TabIndex = 3;
             this.btn_add.Text = "Tambah";
             this.btn_add.UseVisualStyleBackColor = true;
@@ -85,7 +88,7 @@
             this.btn_cari.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_cari.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cari.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_cari.Location = new System.Drawing.Point(221, 186);
+            this.btn_cari.Location = new System.Drawing.Point(299, 188);
             this.btn_cari.Name = "btn_cari";
             this.btn_cari.Size = new System.Drawing.Size(47, 41);
             this.btn_cari.TabIndex = 4;
@@ -112,7 +115,7 @@
             this.btn_clear.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_clear.Location = new System.Drawing.Point(275, 0);
+            this.btn_clear.Location = new System.Drawing.Point(347, 0);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(58, 335);
             this.btn_clear.TabIndex = 7;
@@ -127,7 +130,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 235);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(256, 88);
+            this.groupBox1.Size = new System.Drawing.Size(329, 88);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hasil";
@@ -159,12 +162,46 @@
             this.lbl_tampil.TabIndex = 9;
             this.lbl_tampil.Text = "Result : ";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Input Nilai";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(138, 70);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Auto Sorting";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Cari Nilai";
+            // 
             // Linier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(333, 335);
+            this.ClientSize = new System.Drawing.Size(405, 335);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.label1);
@@ -201,5 +238,8 @@
         private System.Windows.Forms.Label lbl_index;
         private System.Windows.Forms.Label lbl_tampil;
         private System.Windows.Forms.Label lbl_count;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
