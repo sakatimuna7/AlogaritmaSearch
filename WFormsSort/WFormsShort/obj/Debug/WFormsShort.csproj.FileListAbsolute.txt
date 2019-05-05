@@ -1,0 +1,17 @@
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\bin\Debug\WFormsShort.exe.config
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\bin\Debug\WFormsShort.exe
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\bin\Debug\WFormsShort.pdb
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.csprojResolveAssemblyReference.cache
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.Home.resources
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.Properties.Resources.resources
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.csproj.GenerateResource.Cache
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.exe
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.pdb
+c:\users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.SelctionShort.resources
+C:\Users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.BubleShort.resources
+C:\Users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.QuikShort.resources
+C:\Users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\bin\Debug\WFormsShort.exe.manifest
+C:\Users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\bin\Debug\WFormsShort.application
+C:\Users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.exe.manifest
+C:\Users\handan\documents\visual studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.application
+C:\Users\handan\Documents\Visual Studio 2012\Projects\WFormsShort\WFormsShort\obj\Debug\WFormsShort.MargeSort.resources
